@@ -1,4 +1,4 @@
-type HoneyswapFactory @entity {
+type UniswapFactory @entity {
   # factory address
   id: ID!
 
@@ -214,8 +214,8 @@ type Bundle @entity {
   nativeCurrencyPrice: BigDecimal! # price of native currency usd
 }
 
-# Data accumulated and condensed into day stats for all of Honeyswap
-type HoneyswapDayData @entity {
+# Data accumulated and condensed into day stats for all of Uniswap
+type UniswapDayData @entity {
   id: ID! # timestamp rounded to current day by dividing by 86400
   date: Int!
 

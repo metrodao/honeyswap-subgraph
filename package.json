@@ -1,7 +1,7 @@
 {
-  "name": "honeyswap-subgraph",
+  "name": "metroswap-subgraph",
   "version": "1.0.0",
-  "repository": "https://github.com/1Hive/honeyswap-subgraph",
+  "repository": "https://github.com/metroswap/metroswap-subgraph",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "codegen:polygon": "graph codegen subgraph.polygon.yaml --output-dir src/types/",
@@ -15,8 +15,8 @@
     "deploy:xdai": "graph deploy 1hive/honeyswap-xdai subgraph.xdai.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.19.0",
-    "@graphprotocol/graph-ts": "^0.19.0",
+    "@graphprotocol/graph-cli": "^0.20.0",
+    "@graphprotocol/graph-ts": "^0.20.0",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
     "eslint": "^6.2.2",
