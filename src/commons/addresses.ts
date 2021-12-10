@@ -84,7 +84,7 @@ export function getUsdcNativeCurrencyWrapperPairAddress(): string {
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x98f29f527c8e0ecc67a3c2d5567833bee01f2a12'
   if (network == 'xdai') return ADDRESS_ZERO
-  if (network == 'matic') return '0x86b7249272fabb82ef36550ef898ea539225e7f0'
+  if (network == 'matic') return '0x287bc00455DD50Dbe2188926f853835297387AB2'
   log.warning('no usdc native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -94,7 +94,7 @@ export function getDaiNativeCurrencyWrapperPairAddress(): string {
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x7515be43d16f871588adc135d58a9c30a71eb34f'
   if (network == 'xdai') return ADDRESS_ZERO
-  if (network == 'matic') return '0xcba9d57e29ab4eeb9aa69cd82f93b64505055a3b'
+  if (network == 'matic') return '0x6bf612ef8AFf217D5f13A830fE1b47999016a1F3'
   log.warning('no dai native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -104,7 +104,7 @@ export function getUsdtNativeCurrencyWrapperPair(): string {
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x83dd8227c5ef121f2ae99c6f1df0aa9e914448ce'
   if (network == 'xdai') return ADDRESS_ZERO
-  if (network == 'matic') return '0x218e468b15469228f35b0e7f88425cd45fb982bd'
+  if (network == 'matic') return '0xE55e632972e77bD070BDa29F1FD62E6CA84277dC'
   log.warning('no usdt native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }

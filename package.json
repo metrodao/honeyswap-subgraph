@@ -8,11 +8,11 @@
     "codegen:xdai": "graph codegen subgraph.xdai.yaml --output-dir src/types/",
     "build:polygon": "graph build subgraph.polygon.yaml",
     "build:xdai": "graph build subgraph.xdai.yaml",
-    "create-local": "graph create 1hive/honeyswap --node http://127.0.0.1:8020",
-    "deploy-local:polygon": "graph deploy 1hive/honeyswap subgraph.polygon.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
-    "deploy-local:xdai": "graph deploy 1hive/honeyswap subgraph.xdai.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
-    "deploy:polygon": "graph deploy 1hive/honeyswap-polygon subgraph.polygon.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
-    "deploy:xdai": "graph deploy 1hive/honeyswap-xdai subgraph.xdai.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug"
+    "create-local": "graph create tetcoin/metroswap --node http://127.0.0.1:8020",
+    "deploy-local:polygon": "graph deploy tetcoin/metroswap subgraph.polygon.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
+    "deploy-local:xdai": "graph deploy tetcoin/metroswap subgraph.xdai.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
+    "deploy:polygon": "graph deploy tetcoin/metroswap-polygon subgraph.polygon.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
+    "deploy:xdai": "graph deploy tetcoin/metroswap-xdai subgraph.xdai.yaml --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.20.0",
