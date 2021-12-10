@@ -65,14 +65,20 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
   if (network == 'matic') {
     return [
       '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270', // WMATIC
-      '0xb371248dd0f9e4061ccf8850e9223ca48aa7ca4b', // HNY
       '0xc2132d05d31c914a87c6611c10748aeb04b58e8f', // USDT
       '0x2791bca1f2de4661ed88a30c99a7a9449aa84174', // USDC
       '0x8f3cf7ad23cd3cadbd9735aff958023239c6a063', // DAI
+      '0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6', // WBTC
       '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619', // WETH
+      '0x5c4b7ccbf908e64f32e12c6650ec0c96d717f03f', // BNB
+      '0xb85517b87bf64942adf3a0b9e4c71e4bc5caa4e5', // FTM
+      '0x0000000000004946c0e9f43f4dee607b0ef1fa1c', // CHI
+      '0x98d0274895a6187e095859d80b6a1248a7fefb98', // XMN
+      '0x43308565c0204c8076a291f0726f914c3133ce34', // TET
+      '0xb371248dd0f9e4061ccf8850e9223ca48aa7ca4b', // HNY
       '0x37d1ebc3af809b8fadb45dce7077efc629b2b5bb', // pCOMB
       '0x1e42edbe5376e717c1b22904c59e406426e8173f', // SURF
-      '0x4de7fea447b837d7e77848a4b6c0662a64a84e14' // WAVE
+      '0x4de7fea447b837d7e77848a4b6c0662a64a84e14', // WAVE
     ]
   }
   log.warning('no liquidity tracking token address for unsupported network {}', [network])
@@ -84,7 +90,7 @@ export function getUsdcNativeCurrencyWrapperPairAddress(): string {
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x98f29f527c8e0ecc67a3c2d5567833bee01f2a12'
   if (network == 'xdai') return ADDRESS_ZERO
-  if (network == 'matic') return '0x287bc00455DD50Dbe2188926f853835297387AB2'
+  if (network == 'matic') return '0x287bc00455dd50dbe2188926f853835297387ab2'
   log.warning('no usdc native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -94,7 +100,7 @@ export function getDaiNativeCurrencyWrapperPairAddress(): string {
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x7515be43d16f871588adc135d58a9c30a71eb34f'
   if (network == 'xdai') return ADDRESS_ZERO
-  if (network == 'matic') return '0x6bf612ef8AFf217D5f13A830fE1b47999016a1F3'
+  if (network == 'matic') return '0x6bf612ef8aff217d5f13a830fe1b47999016a1f3'
   log.warning('no dai native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -104,7 +110,7 @@ export function getUsdtNativeCurrencyWrapperPair(): string {
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x83dd8227c5ef121f2ae99c6f1df0aa9e914448ce'
   if (network == 'xdai') return ADDRESS_ZERO
-  if (network == 'matic') return '0xE55e632972e77bD070BDa29F1FD62E6CA84277dC'
+  if (network == 'matic') return '0xe55e632972e77bd070bda29f1fd62e6ca84277dc'
   log.warning('no usdt native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
