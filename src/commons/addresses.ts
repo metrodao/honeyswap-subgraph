@@ -7,7 +7,7 @@ export function getFactoryAddress(): string {
   let network = dataSource.network() as string
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0xd34971bab6e5e356fd250715f5de0492bb070452'
-  if (network == 'xdai') return '0xa818b4f111ccac7aa31d0bcc0806d64f2e0737d7'
+  if (network == 'xdai') return '0x9EA3fBcF8173555e1eb7326B664BeaF1F5f86F01'
   if (network == 'matic') return '0x0F10f5a1006F50eDeCd086cCD5704ade25709Ab2'
   log.warning('no factory address for unsupported network {}', [network])
   return ADDRESS_ZERO
