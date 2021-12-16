@@ -9,6 +9,8 @@ export function getFactoryAddress(): string {
   if (network == 'mainnet') return '0xd34971bab6e5e356fd250715f5de0492bb070452'
   if (network == 'xdai') return '0x9EA3fBcF8173555e1eb7326B664BeaF1F5f86F01'
   if (network == 'matic') return '0x0F10f5a1006F50eDeCd086cCD5704ade25709Ab2'
+  if (network == 'avalanche') return '0x9A734E90D89f0c346E27c404D350Ff56DEAD55f1'
+  if (network == 'fuse') return '0x9EA3fBcF8173555e1eb7326B664BeaF1F5f86F01'
   log.warning('no factory address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -19,6 +21,8 @@ export function getNativeCurrencyWrapperAddress(): string {
   if (network == 'mainnet') return '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
   if (network == 'xdai') return '0xe91d153e0b41518a2ce8dd3d7944fa863463a97d'
   if (network == 'matic') return '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270'
+  if (network == 'avalanche') return '0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7'
+  if (network == 'fuse') return '0x0be9e53fd7edac9f859882afdda116645287c629'
   log.warning('no native currency wrapper address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -81,6 +85,28 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0x4de7fea447b837d7e77848a4b6c0662a64a84e14', // WAVE
     ]
   }
+  if (network == 'avalanche') {
+    return [
+      '0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7', // WAVAX
+      '0xc7198437980c041c805a1edcba50c1ce5db95118', // USDT.e
+      '0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664', // USDC.e
+      '0xd586e7f844cea2f87f50152665bcbc2c279d8d70', // DAI.e
+      '0x50b7545627a5162f82a992c33b87adc75187b218', // WBTC
+      '0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab', // WETH.e
+      '0xcf153fc756d062bc6c8f0712c4e8c348ca9be214', // XMN
+    ]
+  }
+  if (network == 'fuse') {
+    return [
+      '0x0be9e53fd7edac9f859882afdda116645287c629', // WFUSE
+      '0xfadbbf8ce7d5b7041bE672561bba99f79c532e10', // USDT
+      '0x620fd5fa44be6af63715ef4e65ddfa0387ad13f5', // USDC
+      '0x94ba7a27c7a95863d1bdc7645ac2951e0cca06ba', // DAI
+      '0x33284f95ccb7b948d9d352e1439561cf83d8d00d', // WBTC
+      '0xa722c13135930332eb3d749b2f0906559d2c5b99', // WETH
+      '0xcf153fc756d062bc6c8f0712c4e8c348ca9be214', // XMN
+    ]
+  }
   log.warning('no liquidity tracking token address for unsupported network {}', [network])
   return []
 }
@@ -89,8 +115,10 @@ export function getUsdcNativeCurrencyWrapperPairAddress(): string {
   let network = dataSource.network() as string
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x98f29f527c8e0ecc67a3c2d5567833bee01f2a12'
-  if (network == 'xdai') return ADDRESS_ZERO
+  if (network == 'xdai') return '0x5d62095ca295812b8b5410431d207f0e69efed52'
   if (network == 'matic') return '0x287bc00455dd50dbe2188926f853835297387ab2'
+  if (network == 'avalanche') return '0x918b9d221d74121aa8b2cf1d9a0f3f87d498361a'
+  if (network == 'fuse') return '0xcaaa54ad5a544dbf2f6cc3242dbe0e1540c9bfbd'
   log.warning('no usdc native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -99,8 +127,10 @@ export function getDaiNativeCurrencyWrapperPairAddress(): string {
   let network = dataSource.network() as string
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x7515be43d16f871588adc135d58a9c30a71eb34f'
-  if (network == 'xdai') return ADDRESS_ZERO
+  if (network == 'xdai') return '0x7855096ecea0830b3b7add55748f3a9dab5a8f13'
   if (network == 'matic') return '0x6bf612ef8aff217d5f13a830fe1b47999016a1f3'
+  if (network == 'avalanche') return '0x776058f296b3328118d7e53b34a4865348aabbda'
+  if (network == 'fuse') return '0xa2fe3958e53aae2a8483c9976c51b5144a4de870'
   log.warning('no dai native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -109,8 +139,10 @@ export function getUsdtNativeCurrencyWrapperPair(): string {
   let network = dataSource.network() as string
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x83dd8227c5ef121f2ae99c6f1df0aa9e914448ce'
-  if (network == 'xdai') return ADDRESS_ZERO
+  if (network == 'xdai') return '0x5fd2e5a4fb734c3dd72a123b4b976e7ebbd016ce'
   if (network == 'matic') return '0xe55e632972e77bd070bda29f1fd62e6ca84277dc'
+  if (network == 'avalanche') return '0x1a82aecba8e740fb733743594da4c7ecebc27470'
+  if (network == 'fuse') return '0x8a06fb8548b7211ca8ae4b14142570e4e0C9a3cf'
   log.warning('no usdt native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }

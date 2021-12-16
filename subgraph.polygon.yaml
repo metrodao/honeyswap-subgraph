@@ -1,5 +1,5 @@
 specVersion: 0.0.2
-description: Metroswap is a decentralized protocol for automated token exchange on xDai/Polygon.
+description: Metroswap is a decentralized protocol for automated token exchange.
 repository: https://github.com/metrodao/metroswap-subgraph
 schema:
   file: ./schema.graphql

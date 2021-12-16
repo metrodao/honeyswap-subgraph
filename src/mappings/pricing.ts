@@ -12,9 +12,9 @@ import {
 import { getMinimumLiquidityThresholdNativeCurrency, getMinimumUsdThresholdForNewPairs } from '../commons/pricing'
 
 export function getNativeCurrencyPriceInUSD(): BigDecimal {
-  if (dataSource.network() == 'xdai') {
+  /*if (dataSource.network() == 'xdai') {
     return ONE_BD
-  }
+  }*/
 
   // fetch native currency prices for each stablecoin
   let daiPair = Pair.load(getDaiNativeCurrencyWrapperPairAddress()) // dai is token1
