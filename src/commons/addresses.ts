@@ -12,6 +12,8 @@ export function getFactoryAddress(): string {
   if (network == 'avalanche') return '0x9A734E90D89f0c346E27c404D350Ff56DEAD55f1'
   if (network == 'fuse') return '0x9EA3fBcF8173555e1eb7326B664BeaF1F5f86F01'
   if (network == 'bsc') return '0x9EA3fBcF8173555e1eb7326B664BeaF1F5f86F01'
+  if (network == 'iotex') return '0x71F83A462C6d2674c731C0a67a0A6Ddf6562DC2d'
+  if (network == 'fantom') return '0x9EA3fBcF8173555e1eb7326B664BeaF1F5f86F01'
   log.warning('no factory address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -25,6 +27,8 @@ export function getNativeCurrencyWrapperAddress(): string {
   if (network == 'avalanche') return '0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7'
   if (network == 'fuse') return '0x0be9e53fd7edac9f859882afdda116645287c629'
   if (network == 'bsc') return '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c'
+  if (network == 'iotex') return '0xa00744882684c3e4747faefd68d283ea44099d03'
+  if (network == 'fantom') return '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83'
   log.warning('no native currency wrapper address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -120,6 +124,28 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0x1ee241a736d2ca587b09333989ded271a3ebe213', // XMN
     ]
   }
+  if (network == 'iotex') {
+    return [
+      '0xa00744882684c3e4747faefd68d283ea44099d03', // WIOTX
+      '0x6fbcdc1169b5130c59e72e51ed68a84841c98cd1', // USDT
+      '0x3b2bf2b523f54c4e454f08aa286d03115aff326c', // USDC
+      '0x62a9d987cbf4c45a550deed5b57b200d7a319632', // DAI
+      '0xc7b93720f73b037394ce00f954f849ed484a3dea', // WBTC
+      '0x0258866edaf84d6081df17660357ab20a07d0c80', // WETH
+      '0x5d9a3948a688aa40b5f2e1ab58b80872fff038a7', // XMN
+    ]
+  }
+  if (network == 'fantom') {
+    return [
+      '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', // WFTM
+      '0x049d68029688eabf473097a2fc38ef61633a3c7a', // USDT
+      '0x04068da6c83afcfa0e13ba15a6696662335d5b75', // USDC
+      '0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e', // DAI
+      '0x321162Cd933E2Be498Cd2267a90534A804051b11', // BTC
+      '0x74b23882a30290451A17c44f4F05243b6b58C76d', // ETH
+      '0xcf153fc756d062bc6c8f0712c4e8c348ca9be214', // XMN
+    ]
+  }
   log.warning('no liquidity tracking token address for unsupported network {}', [network])
   return []
 }
@@ -133,6 +159,8 @@ export function getUsdcNativeCurrencyWrapperPairAddress(): string {
   if (network == 'avalanche') return '0x918b9d221d74121aa8b2cf1d9a0f3f87d498361a'
   if (network == 'fuse') return '0xcaaa54ad5a544dbf2f6cc3242dbe0e1540c9bfbd'
   if (network == 'bsc') return '0xe368ff5b3e650dda04aa198f4631dc972ee284d7'
+  if (network == 'iotex') return '0x8dec9d78426dd331d2a01a445a8f175348ed7e95'
+  if (network == 'fantom') return '0x0d0be88f41c7a439ec597fc9f3c71f74e1d163cc'
   log.warning('no usdc native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -146,6 +174,8 @@ export function getDaiNativeCurrencyWrapperPairAddress(): string {
   if (network == 'avalanche') return '0x776058f296b3328118d7e53b34a4865348aabbda'
   if (network == 'fuse') return '0xa2fe3958e53aae2a8483c9976c51b5144a4de870'
   if (network == 'bsc') return '0xd62a0c33c46d0876035c3df3ae18e628bff0bd04'
+  if (network == 'iotex') return '0x03e09a715233bb3bf6962b17d409872a462fe35d'
+  if (network == 'fantom') return '0x8e46391942baccfcbdeb40319591cced7e4f004d'
   log.warning('no dai native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
@@ -159,6 +189,8 @@ export function getUsdtNativeCurrencyWrapperPair(): string {
   if (network == 'avalanche') return '0x1a82aecba8e740fb733743594da4c7ecebc27470'
   if (network == 'fuse') return '0x8a06fb8548b7211ca8ae4b14142570e4e0C9a3cf'
   if (network == 'bsc') return '0x8ec997c18d55a82945562a589d17fdbf114ba383'
+  if (network == 'iotex') return '0xb9af9eed2959deea9b87ac28455bfb6fb0133329'
+  if (network == 'fantom') return '0x20ed8734e903b8908ee1eb89d89d1c8076f457d7'
   log.warning('no usdt native currency wrapper pair address for unsupported network {}', [network])
   return ADDRESS_ZERO
 }
