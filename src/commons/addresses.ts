@@ -113,7 +113,7 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
     return [
       '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', // WBNB
       '0x55d398326f99059ff775485246999027b3197955', // USDT
-      '0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664', // USDC
+      '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d', // USDC
       '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', // DAI
       '0x50b7545627a5162f82a992c33b87adc75187b218', // BTCB
       '0x2170ed0880ac9a755fd29b2688956bd959f933f8', // ETH
