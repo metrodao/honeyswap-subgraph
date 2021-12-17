@@ -1,6 +1,6 @@
 {
   "name": "metroswap-subgraph",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": "https://github.com/metroswap/metroswap-subgraph",
   "license": "GPL-3.0-or-later",
   "scripts": {
@@ -8,10 +8,12 @@
     "codegen:xdai": "graph codegen subgraph.xdai.yaml --output-dir src/types/",
     "codegen:avalanche": "graph codegen subgraph.avalanche.yaml --output-dir src/types/",
     "codegen:fuse": "graph codegen subgraph.fuse.yaml --output-dir src/types/",
+    "codegen:bsc": "graph codegen subgraph.binance.yaml --output-dir src/types/",
     "build:polygon": "graph build subgraph.polygon.yaml",
     "build:xdai": "graph build subgraph.xdai.yaml",
     "build:avalanche": "graph build subgraph.avalanche.yaml",
     "build:fuse": "graph build subgraph.fuse.yaml",
+    "build:bsc": "graph build subgraph.binance.yaml",
     "create-local": "graph create tetcoin/metroswap --node http://127.0.0.1:8020",
     "deploy-local:polygon": "graph deploy tetcoin/metroswap subgraph.polygon.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
     "deploy-local:xdai": "graph deploy tetcoin/metroswap subgraph.xdai.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
