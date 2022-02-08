@@ -87,10 +87,10 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0x43308565c0204c8076a291f0726f914c3133ce34', // TET
       '0xcd9c7397b0ef2e9b2a9440d61b0e1e3351a38a28', // XLT
       '0xd422089785ada2762343b209b43bc48dd7ad4ae9', // CZR
-      '0x0000000000004946c0e9F43F4Dee607b0eF1fA1c', // CHI
-      '0x99c73Cf56CBbF02DDf035f43bE6E90e29927c9B9', // bDAI
-      '0x669999c2353358e0B84D523f3318acBc106D14e5', // bETH
-      '0x6cc7F33259Bfdc104554308DDe856BE206cc6FF4', // bBTC
+      '0x0000000000004946c0e9f43f4dee607b0ef1fa1c', // CHI
+      '0x99c73cf56cbbf02ddf035f43be6e90e29927c9B9', // bDAI
+      '0x669999c2353358e0b84d523f3318acbc106d14e5', // bETH
+      '0x6cc7f33259bfdc104554308dde856be206cc6ff4', // bBTC
       '0xb371248dd0f9e4061ccf8850e9223ca48aa7ca4b', // HNY
       '0x37d1ebc3af809b8fadb45dce7077efc629b2b5bb', // pCOMB
       '0x1e42edbe5376e717c1b22904c59e406426e8173f', // SURF
