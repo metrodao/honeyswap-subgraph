@@ -85,10 +85,16 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0x0000000000004946c0e9f43f4dee607b0ef1fa1c', // CHI
       '0x98d0274895a6187e095859d80b6a1248a7fefb98', // XMN
       '0x43308565c0204c8076a291f0726f914c3133ce34', // TET
+      '0xcd9c7397b0ef2e9b2a9440d61b0e1e3351a38a28', // XLT
+      '0xd422089785ada2762343b209b43bc48dd7ad4ae9', // CZR
+      '0x0000000000004946c0e9F43F4Dee607b0eF1fA1c', // CHI
+      '0x99c73Cf56CBbF02DDf035f43bE6E90e29927c9B9', // bDAI
+      '0x669999c2353358e0B84D523f3318acBc106D14e5', // bETH
+      '0x6cc7F33259Bfdc104554308DDe856BE206cc6FF4', // bBTC
       '0xb371248dd0f9e4061ccf8850e9223ca48aa7ca4b', // HNY
       '0x37d1ebc3af809b8fadb45dce7077efc629b2b5bb', // pCOMB
       '0x1e42edbe5376e717c1b22904c59e406426e8173f', // SURF
-      '0x4de7fea447b837d7e77848a4b6c0662a64a84e14', // WAVE
+      '0x4de7fea447b837d7e77848a4b6c0662a64a84e14' // WAVE
     ]
   }
   if (network == 'avalanche') {
@@ -99,7 +105,7 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0xd586e7f844cea2f87f50152665bcbc2c279d8d70', // DAI.e
       '0x50b7545627a5162f82a992c33b87adc75187b218', // WBTC
       '0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab', // WETH.e
-      '0xcf153fc756d062bc6c8f0712c4e8c348ca9be214', // XMN
+      '0xcf153fc756d062bc6c8f0712c4e8c348ca9be214' // XMN
     ]
   }
   if (network == 'fuse') {
@@ -110,7 +116,7 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0x94ba7a27c7a95863d1bdc7645ac2951e0cca06ba', // DAI
       '0x33284f95ccb7b948d9d352e1439561cf83d8d00d', // WBTC
       '0xa722c13135930332eb3d749b2f0906559d2c5b99', // WETH
-      '0xcf153fc756d062bc6c8f0712c4e8c348ca9be214', // XMN
+      '0xcf153fc756d062bc6c8f0712c4e8c348ca9be214' // XMN
     ]
   }
   if (network == 'bsc') {
@@ -121,7 +127,7 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', // DAI
       '0x50b7545627a5162f82a992c33b87adc75187b218', // BTCB
       '0x2170ed0880ac9a755fd29b2688956bd959f933f8', // ETH
-      '0x1ee241a736d2ca587b09333989ded271a3ebe213', // XMN
+      '0x1ee241a736d2ca587b09333989ded271a3ebe213' // XMN
     ]
   }
   if (network == 'iotex') {
@@ -132,7 +138,7 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0x62a9d987cbf4c45a550deed5b57b200d7a319632', // DAI
       '0xc7b93720f73b037394ce00f954f849ed484a3dea', // WBTC
       '0x0258866edaf84d6081df17660357ab20a07d0c80', // WETH
-      '0x5d9a3948a688aa40b5f2e1ab58b80872fff038a7', // XMN
+      '0x5d9a3948a688aa40b5f2e1ab58b80872fff038a7' // XMN
     ]
   }
   if (network == 'fantom') {
@@ -144,6 +150,10 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0x321162Cd933E2Be498Cd2267a90534A804051b11', // BTC
       '0x74b23882a30290451A17c44f4F05243b6b58C76d', // ETH
       '0xcf153fc756d062bc6c8f0712c4e8c348ca9be214', // XMN
+      '0x2814541f73d718cb66636c755ff33dfbf63715c4', // TET
+      '0x16d8adf3d5b93aa3a9ef2daa9521ced713838387', // XLT
+      '0xa3d098f1d5035b9e259971a8f4c0dcf5a56c8762', // CZR
+      '0x2a13935a9729e618c5af17dd639590860c87e207' // HYPERFANTOM
     ]
   }
   log.warning('no liquidity tracking token address for unsupported network {}', [network])
