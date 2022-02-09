@@ -92,6 +92,7 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0x6cc7f33259bfdc104554308dde856be206cc6ff4', // bBTC
       '0xd18e7577e67ee2b2e03cfedd41193ded64553c13', // bBNB
       '0xc3387412df59968fb0e10e6462ad4da9d8d637bb', // bTRX
+      '0x96254554ac50c841772f0cec8a9874e05ebafc95', // USDS
       '0xb371248dd0f9e4061ccf8850e9223ca48aa7ca4b', // HNY
       '0x37d1ebc3af809b8fadb45dce7077efc629b2b5bb', // pCOMB
       '0x1e42edbe5376e717c1b22904c59e406426e8173f', // SURF
