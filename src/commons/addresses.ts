@@ -91,7 +91,9 @@ export function getLiquidityTrackingTokenAddresses(): string[] {
       '0x77bdb32236d9c1f2d29d846b7d8b4a448f84b367', // CGT
       '0xc4eeeffc0139df97897e9b6893bf5ff0390413be', // XDV
       '0x33d216b00730760def2dc8971502baabd9c12105', // XPS
-      '0x6c4Dd3FE38987327506e2F8aDA4B27758FF324e6', // SBCH
+      '0x6c4dd3fe38987327506e2f8ada4b27758ff324e6', // SBCH
+      '0x6f8be615193675f8360fa6cd5a090311c518859d', // TNT
+      '0x713f8cbefe780ad8e56b7b554b1a4078a95b6e7f', // MTC
       '0x99c73cf56cbbf02ddf035f43be6e90e29927c9B9', // bDAI
       '0x669999c2353358e0b84d523f3318acbc106d14e5', // bETH
       '0x6cc7f33259bfdc104554308dde856be206cc6ff4', // bBTC
